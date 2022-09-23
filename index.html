@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        text-align: center;
+        background-image: url("8.jpg");
+        background-repeat: no-repeat;
+        height: 800px;
+        color: whitesmoke;
+        font-family: "Times New Roman", Times, serif;
+        display: flex;
+        flex-direction: column;
+      }
+
+      #backspace-btn {
+        border: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 50px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        margin-left: 0px;
+      }
+      #backspace-btn:hover {
+        background-color: red;
+        color: aliceblue;
+      }
+      #increment-btn {
+        border: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 245px;
+        font-weight: bold;
+        margin-bottom: 25px;
+        margin-right: 0px;
+      }
+      #increment-btn:hover {
+        background-color: black;
+        color: aliceblue;
+      }
+      #save-btn:hover {
+        background-color: black;
+        color: aliceblue;
+      }
+      #save-btn {
+        border: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 300px;
+        font-weight: bold;
+        margin-left: 25px;
+        margin: 20px;
+      }
+      h1 {
+        font-size: 70px;
+        text-shadow: 2px 1px 1px lightskyblue;
+      }
+      h2 {
+        font-weight: 600;
+        font-size: 30px;
+        margin: 50px;
+        text-shadow: 1px 1px 1px black;
+      }
+      .footer {
+        position: fixed;
+        left: 10px;
+        bottom: 0px;
+        right: 10px;
+        background-color: aliceblue;
+        color: black;
+        text-align: center;
+        margin-top: auto;
+      }
+      #clock {
+        margin-top: 30px;
+        width: 100px;
+      }
+    </style>
+    <script
+      src="https://kit.fontawesome.com/3d36bdba97.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="header">
+      <img id="clock" src="clock.png" />
+      <h1 id="text-1">NUMBER COUNT:</h1>
+      <p id="save-el">Privious Entries: &nbsp;</p>
+      <h2 id="count-el">0</h2>
+      <div class="btn">
+        <div id="a">
+          <div id="i">
+            <button id="increment-btn" onclick="increment()">
+              INCREMENT <i class="fa-solid fa-chart-line"></i>
+            </button>
+            <button id="backspace-btn" onclick="backspace()">
+              <i class="fa-sharp fa-solid fa-delete-left"></i>
+            </button>
+          </div>
+          <div id="s">
+            <button id="save-btn" onclick="save()">
+              SAVE <i class="fa-solid fa-floppy-disk"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>
+        For more contents like this, check my profile on github
+        <a href="https://twitter.com/Tribby08"
+          ><i class="fa-brands fa-github"></i></a
+        >, and also follow me on twitter
+        <a href="https://github.com/mohawwal"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+      </p>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
